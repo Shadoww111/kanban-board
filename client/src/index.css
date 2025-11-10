@@ -1,0 +1,4 @@
+@tailwind base; @tailwind components; @tailwind utilities;
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-thumb { background: #d1d5db; border-radius: 3px; }
+.kanban-col { min-height: calc(100vh - 180px); }
