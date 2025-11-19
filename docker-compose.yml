@@ -1,0 +1,14 @@
+version: "3.8"
+services:
+  db:
+    image: mariadb:11
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: kanban
+      MYSQL_USER: kanban_user
+      MYSQL_PASSWORD: your_password
+    ports: ["3306:3306"]
+    volumes: [db_data:/var/lib/mysql]
+volumes:
+  db_data:
